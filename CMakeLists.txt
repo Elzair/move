@@ -8,3 +8,5 @@ target_include_directories(boost_move BEFORE INTERFACE ${CMAKE_CURRENT_SOURCE_DI
 
 install(TARGETS boost_move DESTINATION lib)
 install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include/boost DESTINATION include)
+
+add_library(boost::move ALIAS boost_move)
